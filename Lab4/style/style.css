@@ -1,0 +1,173 @@
+body {
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo-box {
+    text-align: left;
+}
+
+.logo
+{
+    width: 110px;
+    height: 80px;
+    margin: 10px;
+}
+
+.nav-elem {
+    text-align: center;
+}
+
+.navBar {
+/*rgb(145, 235, 28)*/
+    width: 100% !important;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(105, 104, 102));
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.nav-menu
+{
+    display: inline;
+}
+
+.panel {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.6 );
+    backdrop-filter: blur( 15px );
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.2);
+    border-radius: 7px;
+    display: inline-block;
+    alignment: top;
+    display: flex;
+}
+
+.border {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.2);
+    border-radius: 7px;
+}
+
+.photo-border {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(105, 104, 102);
+    border-radius: 7px;
+}
+
+
+
+
+.main-cont {
+    margin: 20px !important;
+    padding: 20px;
+    width: auto;
+}
+
+.students-view {
+    height:500px;
+    overflow-y: scroll;
+}
+
+.photo {
+    width: 100%;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.adding-form {
+    text-align: center;
+    font-family: Zen Dots, monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 16px;
+}
+
+
+.pane-text-type{
+    font-family: Poppins, monospace;
+    text-justify: auto;
+    color: black;
+}
+
+.pane-text-type h6{
+    font-family: Zen Dots, monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.pane-text-type h5{
+    font-family: Zen Dots, monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.main-text-type{
+    font-family: Zen Dots, monospace;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+input[type="file"]
+{
+    font-family: Poppins, monospace;
+    font-size:14px;
+}
+input[type="text"]
+{
+    font-family: Poppins, monospace;
+    font-size:16px;
+}
+
+textarea[type="text"]
+{
+    font-family: Poppins, monospace;
+    font-size:16px;
+}
+
+.break-text {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: vertical;
+    min-height: 40px;
+    line-height: 20px;
+}
+
+.my-button {
+    display: inline-block;
+    float: right;
+}
+
+.message-box {
+    text-align: center;
+    vertical-align: center;
+}
+
+.message {
+    width: 100%;
+    margin: 10px;
+    object-fit: cover;
+    max-width: 60px;
+    max-height: 60px;
+}
