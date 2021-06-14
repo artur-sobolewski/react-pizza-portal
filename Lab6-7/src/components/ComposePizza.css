@@ -1,0 +1,225 @@
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.ingredient-grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-content: center;
+}
+
+.ingredient-box {
+    width: 220px;
+    height: 180px;
+    align-self: center;
+    justify-self: center;
+    margin: 0px;
+}
+
+
+.ingredient-img-box {
+    width: 220px;
+    height: 124px;
+    text-align: center;
+    z-index: 9;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.ingredient-img {
+    width: 120px;
+}
+
+.ingredient-desc {
+    width: 220px;
+    height: 120px;
+    
+    box-shadow: 0 8px 16px 0 rgba(161, 140, 140, 0.3); 
+    backdrop-filter: blur( 17px );
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(197, 197, 197, 0.699);
+    border-radius: 16px; 
+
+    position: relative;
+    top: -60px;
+    left: 0;
+
+    text-align: center;
+    color: white;
+    /* padding-top: 18px; */
+}
+
+
+.ingredient-desc p {
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+.ingredient-desc h4 {
+    margin-bottom: 2px;
+}
+
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+form label{
+    display: inline-block;
+    /* justify-content: space-between; */
+}
+
+form .ingredient-desc {
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(161, 140, 140, 0.3); 
+    backdrop-filter: blur( 17px );
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(197, 197, 197, 0.699);
+    border-radius: 16px;  
+    /* width: 95px;
+    height: 25px; */
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+
+.ingredient-img-box:hover + .ingredient-desc{
+    border-color: teal;
+    background-color: teal;
+    box-shadow: 0 0px 16px 0 rgba(0, 128, 128, 0.6);
+    color: white;
+}
+
+
+form .ingredient-desc:hover{
+    border-color: teal;
+    background-color: teal;
+    box-shadow: 0 0px 16px 0 rgba(0, 128, 128, 0.6);
+    color: white;
+}
+
+form input:checked + .ingredient-box .ingredient-desc {
+    border-color: teal;
+    background-color: teal;
+    box-shadow: 0 0px 16px 0 rgba(0, 128, 128, 0.6);
+    color: white;
+}
+
+.info-panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.info-panel h3{
+    color: white;
+}
+
+.info-box {
+    text-align: right;
+    margin-right: 5px;
+    display: inline;
+}
+.info-box h3, p{
+    display: inline;
+}
+.info-box p{
+    margin-left: 5px;
+}
+
+.accept-button-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: left;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.accept-button {
+    text-align: center;
+    width: 80%;
+    height: 30px;
+    background-color: rgba(30, 187, 95, 0.884);
+    box-shadow: 0 0 20px 0 rgba(14, 250, 26, 0.6);
+    border-radius: 16px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.accept-button:hover {
+    background-color: rgb(14, 250, 112);
+    box-shadow: 0 8px 32px 0 rgba(14, 250, 26, 0.6);
+}
+
+
+.green-text {
+    color: rgb(29, 170, 1);;
+}
+
+
+
+@media only screen and (min-width: 600px)  {
+    .ingredient-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .info-panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+@media only screen and (min-width: 910px)  {
+    .ingredient-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .info-panel {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        
+    }
+}
+/* @media only screen and (min-width: 1000px)  {
+
+    .info-panel {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        
+    }
+} */
+
+@media only screen and (min-width: 1375px)  {
+    .ingredient-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .info-panel {
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr;
+        
+    }
+}
+
