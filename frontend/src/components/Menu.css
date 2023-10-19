@@ -1,0 +1,165 @@
+.pizza-grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.pizza-box {
+    width: 320px;
+    height: 290px;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.pizza-img-box {
+    text-align: center;
+    z-index: 9;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.pizza-img {
+    width: 150px;
+}
+
+.pizza-desc {
+    width: 320px;
+    height: 190px;
+    
+    box-shadow: 0 8px 16px 0 rgba(161, 140, 140, 0.3); 
+    backdrop-filter: blur( 17px );
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(197, 197, 197, 0.699);
+    border-radius: 16px; 
+
+    position: relative;
+    top: -50px;
+    left: 0;
+
+    text-align: center;
+    color: white;
+    /* padding-top: 18px; */
+}
+
+.pizza-desc li {
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 3px;
+}
+
+.pizza-desc p {
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+.pizza-desc h4 {
+    margin-bottom: 2px;
+}
+
+
+
+.add-order-button {
+    background-color: rgba(182, 152, 18, 0.884);
+    box-shadow: 0 0 20px 0 rgba(182, 152, 18, 0.6);
+    border-radius: 14px;
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 35px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5px;
+    border: none;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .add-order-button:hover {
+    background-color: rgba(252, 211, 29, 0.884);
+    box-shadow: 0 0 36px 0 rgba(182, 152, 18, 0.6);
+    cursor: pointer;
+  }
+
+  .size-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+form {
+    margin-top: 7px;
+} 
+
+
+
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+form label{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+form .size {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur( 17px );
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(197, 197, 197, 0.699);
+    border-radius: 16px; 
+    width: 95px;
+    height: 25px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 4px;
+}
+
+
+form .size:hover {
+    border-color: teal;
+    background-color: teal;
+    box-shadow: 0 0px 16px 0 rgba(0, 128, 128, 0.6);
+    color: white;
+}
+
+
+
+form input:checked + .size{
+    border-color: teal;
+    background-color: teal;
+    box-shadow: 0 0px 16px 0 rgba(0, 128, 128, 0.6);
+    color: white;
+}
+
+.ingredients-box {
+    height: 40px;
+}
+
+
+@media only screen and (min-width: 910px)  {
+    .pizza-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1225px)  {
+    .pizza-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
