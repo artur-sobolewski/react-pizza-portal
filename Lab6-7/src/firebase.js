@@ -5,7 +5,7 @@ import "firebase/storage";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBFVGoAlieHS0xH1FMIt89CYmJudupjhL4",
+    apiKey: "",
     authDomain: "piw-pwr-pizza-portal.firebaseapp.com",
     projectId: "piw-pwr-pizza-portal",
     storageBucket: "piw-pwr-pizza-portal.appspot.com",
